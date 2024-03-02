@@ -37,7 +37,7 @@ This repository contains the source code and documentation for the Facial Recogn
 
 ### Installation
 
-1. 
+
 
 ## Usage
 

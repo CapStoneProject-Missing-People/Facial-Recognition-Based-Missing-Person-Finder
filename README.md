@@ -12,7 +12,7 @@ $${\color{red}🚧 This *Project *Is *Under *Development.}
 - [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
-- [Contributing](#contributing)
+- [Contributing](#contributers)
 - [License](#license)
 
 ## About
@@ -43,9 +43,9 @@ This repository contains the source code and documentation for the Facial Recogn
 
 
 
-## Contributing
+## Contributers
 
-
+Leulseged B. Ayalew
 
 ## License
 

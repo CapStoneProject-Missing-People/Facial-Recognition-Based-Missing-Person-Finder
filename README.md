@@ -1,6 +1,6 @@
 # Facial Recognition Missing Person Finder
 
-!<img src="face_id.jfif" alt="Project Image" width="300">
+<img src="face_id.jfif" alt="Project Image" width="300">
 
 > Final Year Project for Bachelor's in Software Engineering at AASTU. This project focuses on developing a Facial Recognition Based Missing Person Finder to enhance search and rescue operations.
 

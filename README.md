@@ -1,6 +1,6 @@
 # Facial Recognition Missing Person Finder
 
-![Project Image](url_to_project_image)
+![Project Image](C:\Users\HP\Desktop\courses\CapStone\Facial-Recognition-Based-Missing-Person-Finder\face_id.jfif)
 
 > Final Year Project for Bachelor's in Software Engineering at AASTU. This project focuses on developing a Facial Recognition Based Missing Person Finder to enhance search and rescue operations.
 

@@ -4,7 +4,7 @@ const { Canvas, Image } = require("canvas");
 const canvas = require("canvas");
 const fileUpload = require("express-fileupload");
 const { connectToDb } = require("./db/conn");
-const FaceModel = require("./schema/face")
+const FaceModel = require("./schema/face");
 faceapi.env.monkeyPatch({ Canvas, Image });
 
 const app = express();
@@ -57,6 +57,11 @@ async function getDescriptorsFromDB(image) {
   try {
     // Fetch only relevant data (descriptors) from the database
     const faces = await FaceModel.find({}, { label: 1, descriptions: 1 });
+
+    // Check if there are no missing persons in the database
+    if (!faces || faces.length === 0) {
+      return {error: "There is No Data in the DataBase"}
+    }
 
     // Process the data and create faceapi.LabeledFaceDescriptors
     const labeledFaceDescriptors = faces.map((face) => {
@@ -132,7 +137,7 @@ app.post("/create-face", async (req, res) => {
 // add your mongo key instead of the ***
 connectToDb()
   .then(() => {
-    app.listen(5000);
+    app.listen(process.env.PORT || 5000);
     console.log("DB connected and server us running.");
   })
   .catch((err) => {
